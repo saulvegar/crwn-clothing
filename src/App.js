@@ -31,7 +31,6 @@ class App extends Component {
               ...snapShot.data()
             }
           });
-          console.log(this.state)
         });
       }
 
@@ -47,7 +46,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header current={this.state.currentUser} />
+        <Header currentUser={this.state.currentUser} />
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
