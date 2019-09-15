@@ -30,7 +30,7 @@ class SignIn extends Component {
       <div className="sign-in">
         <h2>I already have an account</h2>
         <span>Sign in ith your email and password</span>
-        <form obSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit}>
           <FormInput
             type="email"
             name="email"
